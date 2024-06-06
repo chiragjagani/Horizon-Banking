@@ -3,12 +3,8 @@ import React from "react";
 import HearderBox from "@/components/HearderBox";
 import RightSidebar from "@/components/RightSidebar";
 
-const Home = () => {
-  const loggedIn = {
-    firstName: "Chirag",
-    lastName: "Jagani",
-    email: "jaganichirag912@gmail.com",
-  };
+export const Home = () => {
+  const loggedIn = { firstName: "Chirag" };
 
   return (
     <section className="home">
@@ -30,13 +26,7 @@ const Home = () => {
         RECENT TRANSACTIONS
       </div>
 
-      <RightSidebar
-        user={loggedIn}
-        transactions={[]}
-        banks={[{ currentBalance: 1250 }, { currentBalance: 1350 }]}
-      />
+      <RightSidebar user={loggedIn} transactions={[]} banks={[]} />
     </section>
   );
 };
-
-export default Home;

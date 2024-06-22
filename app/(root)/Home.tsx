@@ -26,7 +26,7 @@ export const Home = () => {
         RECENT TRANSACTIONS
       </div>
 
-      <RightSidebar user={loggedIn} transactions={[]} banks={[]} />
+      <RightSidebar user={loggedIn?.firstName} transactions={[]} banks={[]} />
     </section>
   );
 };
